@@ -1,5 +1,5 @@
 DESTDIR = 
-hypdir = /usr/share/hyphen/
+hyphdir = /usr/share/hyphen/
 dictdir = /usr/share/myspell/dicts/
 ooo_info_dir = /usr/share/myspell/infos/ooo/
 docdir = /usr/share/doc/openoffice.org-hyphenation-gu/
@@ -20,11 +20,11 @@ install: all
 	cp ${ooo_info_file}  ${DESTDIR}${ooo_info_dir}
 	mkdir -p ${DESTDIR}${docdir}
 	cp ${doc_files} ${DESTDIR}${docdir}
-	mkdir -p ${DESTDIR}${hypdir}
-	cp ${dict_files} ${DESTDIR}${hypdir}
-	chmod 644 ${DESTDIR}${hypdir}${dict_files}	
+	mkdir -p ${DESTDIR}${hyphdir}
+	cp ${dict_files} ${DESTDIR}${hyphdir}
+	chmod 644 ${DESTDIR}${hyphdir}${dict_files}	
 	mkdir -p ${DESTDIR}${dictdir}
-	ln -s ${DESTDIR}${hypdir}${dict_files} ${DESTDIR}${dictdir}${dict_files}
+	ln -s ${DESTDIR}${hyphdir}${dict_files} ${DESTDIR}${dictdir}${dict_files}
 	update-openoffice-dicts 
 	
 	
@@ -32,7 +32,7 @@ uninstall:
 	-cd ${DESTDIR}${dictdir}/ && rm ${dict_files}
 	-cd ${DESTDIR}${docdir}/ && rm ${doc_files}
 	-cd ${DESTDIR}${ooo_info_dir}/ && rm ${ooo_info_file}
-	-cd ${DESTDIR}${hypdir}/ && rm ${dict_files}
+	-cd ${DESTDIR}${hyphdir}/ && rm ${dict_files}
 	
 clean:
 	-rm -rf ${distdir}.tar.bz2 ${distdir}	
