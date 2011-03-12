@@ -11,7 +11,7 @@ extra_files = Makefile
 ooo_info_file = openoffice.org-hyphenation-ta
 version = 0.5.3
 
-distdir=hyphenation-ta-in_${version}
+distdir=hyphenation-ta-${version}
 
 all: ${doc_files} ${dict_files}
 
