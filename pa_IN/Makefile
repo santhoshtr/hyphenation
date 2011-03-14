@@ -9,9 +9,9 @@ dict_files = hyph_pa_IN.dic
 doc_files = README ChangeLog COPYING
 extra_files = Makefile
 ooo_info_file = openoffice.org-hyphenation-pa
-version = 0.5.3
+version = 0.5.4
 
-distdir=hyphenation-pa-${version}
+distdir=hyphen-pa_${version}.orig
 
 all: ${doc_files} ${dict_files}
 
