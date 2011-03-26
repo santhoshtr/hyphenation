@@ -24,12 +24,12 @@ docdir = /usr/share/doc/openoffice.org-hyphenation-te/
 
 
 dict_files = hyph_te_IN.dic
-doc_files = README ChangeLog COPYING
+doc_files = README ChangeLog
 extra_files = Makefile
 ooo_info_file = openoffice.org-hyphenation-te
-version = 0.5.4
+version = 0.5.5
 
-distdir=hyphen-te_${version}.orig
+distdir=hyphen-te_${version}
 
 all: ${doc_files} ${dict_files}
 

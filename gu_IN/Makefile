@@ -24,12 +24,12 @@ docdir = /usr/share/doc/openoffice.org-hyphenation-gu/
 
 
 dict_files = hyph_gu_IN.dic
-doc_files = README ChangeLog COPYING
+doc_files = README ChangeLog
 extra_files = Makefile
 ooo_info_file = openoffice.org-hyphenation-gu
-version = 0.5.4
+version = 0.5.5
 
-distdir=hyphen-gu_${version}.orig
+distdir=hyphen-gu_${version}
 
 all: ${doc_files} ${dict_files}
 

@@ -24,12 +24,12 @@ docdir = /usr/share/doc/openoffice.org-hyphenation-or/
 
 
 dict_files = hyph_or_IN.dic
-doc_files = README ChangeLog COPYING
+doc_files = README ChangeLog
 extra_files = Makefile
 ooo_info_file = openoffice.org-hyphenation-or
-version = 0.5.4
+version = 0.5.5
 
-distdir=hyphen-or_${version}.orig
+distdir=hyphen-or_${version}
 
 all: ${doc_files} ${dict_files}
 

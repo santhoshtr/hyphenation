@@ -24,12 +24,12 @@ docdir = /usr/share/doc/openoffice.org-hyphenation-hi/
 
 
 dict_files = hyph_hi_IN.dic
-doc_files = README ChangeLog COPYING
+doc_files = README ChangeLog
 extra_files = Makefile
 ooo_info_file = openoffice.org-hyphenation-hi
-version = 0.5.4
+version = 0.5.5
 
-distdir=hyphen-hi_${version}.orig
+distdir=hyphen-hi_${version}
 
 all: ${doc_files} ${dict_files}
 

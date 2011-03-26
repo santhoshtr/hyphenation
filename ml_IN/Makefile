@@ -24,12 +24,12 @@ docdir = /usr/share/doc/openoffice.org-hyphenation-ml/
 
 
 dict_files = hyph_ml_IN.dic
-doc_files = README ChangeLog COPYING
+doc_files = README ChangeLog
 extra_files = Makefile
 ooo_info_file = openoffice.org-hyphenation-ml
-version = 0.5.4
+version = 0.5.5
 
-distdir=hyphen-ml_${version}.orig
+distdir=hyphen-ml_${version}
 
 all: ${doc_files} ${dict_files}
 

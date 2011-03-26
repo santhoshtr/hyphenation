@@ -1,3 +1,20 @@
+# Copyright (C) 2011-2013 Shravan Aras <123.shravan@gmail.com>
+# Copyright (C) 2008-2010 Santhosh Thottingal <santhosh.thottingal@gmail.com>
+#
+#  This library is free software; you can redistribute it and/or
+#  modify it under the terms of the GNU Lesser General Public
+#  License as published by the Free Software Foundation;
+#  version 3 or later version of the License.
+#
+#  This library is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#  Lesser General Public License for more details.
+#
+#  You should have received a copy of the GNU Lesser General Public
+#  License along with this library; if not, write to the Free Software
+#  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA
+
 DESTDIR = 
 hyphdir = /usr/share/hyphen/
 dictdir = /usr/share/myspell/dicts/
@@ -6,12 +23,12 @@ docdir = /usr/share/doc/openoffice.org-hyphenation-pa/
 
 
 dict_files = hyph_pa_IN.dic
-doc_files = README ChangeLog COPYING
+doc_files = README ChangeLog
 extra_files = Makefile
 ooo_info_file = openoffice.org-hyphenation-pa
-version = 0.5.4
+version = 0.5.5
 
-distdir=hyphen-pa_${version}.orig
+distdir=hyphen-pa_${version}
 
 all: ${doc_files} ${dict_files}
 

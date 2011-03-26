@@ -24,12 +24,12 @@ docdir = /usr/share/doc/openoffice.org-hyphenation-ta/
 
 
 dict_files = hyph_ta_IN.dic
-doc_files = README ChangeLog COPYING
+doc_files = README ChangeLog
 extra_files = Makefile
 ooo_info_file = openoffice.org-hyphenation-ta
-version = 0.5.4
+version = 0.5.5
 
-distdir=hyphen-ta_${version}.orig
+distdir=hyphen-ta_${version}
 
 all: ${doc_files} ${dict_files}
 

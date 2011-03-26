@@ -24,12 +24,12 @@ docdir = /usr/share/doc/openoffice.org-hyphenation-bn/
 
 
 dict_files = hyph_bn_IN.dic
-doc_files = README ChangeLog COPYING
+doc_files = README ChangeLog
 extra_files = Makefile
 ooo_info_file = openoffice.org-hyphenation-bn
-version = 0.5.4
+version = 0.5.5
 
-distdir=hyphen-bn_${version}.orig
+distdir=hyphen-bn_${version}
 
 all: ${doc_files} ${dict_files}
 

@@ -24,12 +24,12 @@ docdir = /usr/share/doc/openoffice.org-hyphenation-as/
 
 
 dict_files = hyph_as_IN.dic
-doc_files = README ChangeLog COPYING
+doc_files = README ChangeLog
 extra_files = Makefile
 ooo_info_file = openoffice.org-hyphenation-as
-version = 0.5.4
+version = 0.5.5
 
-distdir=hyphen-as_${version}.orig
+distdir=hyphen-as_${version}
 
 all: ${doc_files} ${dict_files}
 
