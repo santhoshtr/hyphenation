@@ -20,16 +20,16 @@ DESTDIR =
 hyphdir = /usr/share/hyphen/
 dictdir = /usr/share/myspell/dicts/
 ooo_info_dir = /usr/share/myspell/infos/ooo/
-docdir = /usr/share/doc/openoffice.org-hyphenation-ta/
+docdir = /usr/share/doc/hyphen-ta/
 
 
 dict_files = hyph_ta_IN.dic
 doc_files = README ChangeLog
 extra_files = Makefile
 ooo_info_file = openoffice.org-hyphenation-ta
-version = 0.5.5
+version = 0.5.6
 
-distdir=hyphen-ta_${version}
+distdir=hyphen-ta-${version}
 
 all: ${doc_files} ${dict_files}
 
@@ -43,7 +43,7 @@ install: all
 	chmod 644 ${DESTDIR}${hyphdir}${dict_files}	
 	mkdir -p ${DESTDIR}${dictdir}
 	ln -s ${DESTDIR}${hyphdir}${dict_files} ${DESTDIR}${dictdir}${dict_files}
-	update-openoffice-dicts 
+	/usr/sbin/update-openoffice-dicts 
 	
 	
 uninstall:
