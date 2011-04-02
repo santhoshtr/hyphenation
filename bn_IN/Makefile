@@ -27,7 +27,7 @@ dict_files = hyph_bn_IN.dic
 doc_files = README ChangeLog
 extra_files = Makefile
 ooo_info_file = openoffice.org-hyphenation-bn
-version = 0.5.6
+version = 0.5.7
 
 distdir=hyphen-bn-${version}
 
