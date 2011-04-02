@@ -27,7 +27,7 @@ dict_files = hyph_ta_IN.dic
 doc_files = README ChangeLog
 extra_files = Makefile
 ooo_info_file = openoffice.org-hyphenation-ta
-version = 0.5.7
+version = 0.5.8
 
 distdir=hyphen-ta-${version}
 
@@ -42,7 +42,7 @@ install: all
 	cp ${dict_files} ${DESTDIR}${hyphdir}
 	chmod 644 ${DESTDIR}${hyphdir}${dict_files}	
 	mkdir -p ${DESTDIR}${dictdir}
-	ln -s ${DESTDIR}${hyphdir}${dict_files} ${DESTDIR}${dictdir}${dict_files}
+	ln -s ${hyphdir}${dict_files} ${DESTDIR}${dictdir}${dict_files}
 	/usr/sbin/update-openoffice-dicts 
 	
 	
