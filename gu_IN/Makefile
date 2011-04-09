@@ -1,5 +1,5 @@
 # Hyphenation Makefile
-# Copyright (C) 2011-2013 Shravan Aras <123.shravan@gmail.com>
+# Copyright (C) 2009-2011 Shravan Aras <123.shravan@gmail.com>
 # Copyright (C) 2008-2010 Santhosh Thottingal <santhosh.thottingal@gmail.com>
 #
 #  This library is free software; you can redistribute it and/or
@@ -27,7 +27,7 @@ dict_files = hyph_gu_IN.dic
 doc_files = README ChangeLog
 extra_files = Makefile
 ooo_info_file = openoffice.org-hyphenation-gu
-version = 0.5.8
+version = 0.6.0
 
 distdir=hyphen-gu-${version}
 
