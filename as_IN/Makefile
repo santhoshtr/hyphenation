@@ -27,7 +27,7 @@ dict_files = hyph_as_IN.dic
 doc_files = README ChangeLog
 extra_files = Makefile
 ooo_info_file = openoffice.org-hyphenation-as
-version = 0.6.0
+version = 0.7.0
 
 distdir=hyphen-as-${version}
 
@@ -43,7 +43,6 @@ install: all
 	chmod 644 ${DESTDIR}${hyphdir}${dict_files}	
 	mkdir -p ${DESTDIR}${dictdir}
 	ln -s ${hyphdir}${dict_files} ${DESTDIR}${dictdir}${dict_files}
-	/usr/sbin/update-openoffice-dicts 
 	
 	
 uninstall:
