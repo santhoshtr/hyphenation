@@ -19,23 +19,19 @@
 DESTDIR = 
 hyphdir = /usr/share/hyphen/
 dictdir = /usr/share/myspell/dicts/
-ooo_info_dir = /usr/share/myspell/infos/ooo/
 docdir = /usr/share/doc/hyphen-as/
 
 
 dict_files = hyph_as_IN.dic
 doc_files = README ChangeLog
 extra_files = Makefile
-ooo_info_file = openoffice.org-hyphenation-as
-version = 0.7.0
+version = 0.8.0
 
 distdir=hyphen-as-${version}
 
 all: ${doc_files} ${dict_files}
 
 install: all
-	mkdir -p ${DESTDIR}${ooo_info_dir}
-	cp ${ooo_info_file}  ${DESTDIR}${ooo_info_dir}
 	mkdir -p ${DESTDIR}${docdir}
 	cp ${doc_files} ${DESTDIR}${docdir}
 	mkdir -p ${DESTDIR}${hyphdir}
@@ -48,7 +44,6 @@ install: all
 uninstall:
 	-cd ${DESTDIR}${dictdir}/ && rm ${dict_files}
 	-cd ${DESTDIR}${docdir}/ && rm ${doc_files}
-	-cd ${DESTDIR}${ooo_info_dir}/ && rm ${ooo_info_file}
 	-cd ${DESTDIR}${hyphdir}/ && rm ${dict_files}
 	
 clean:
@@ -57,7 +52,7 @@ clean:
 dist:
 	-rm -rf ${distdir}.tar.bz2 ${distdir}
 	mkdir ${distdir}
-	cp -p ${dict_files}  ${doc_files} ${ooo_info_file}  ${extra_files} ${distdir}/
+	cp -p ${dict_files}  ${doc_files}  ${extra_files} ${distdir}/
 	tar cf ${distdir}.tar ${distdir}/
 	bzip2 -9 ${distdir}.tar
 	rm -rf ${distdir}/
