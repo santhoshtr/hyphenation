@@ -1,5 +1,9 @@
 ChangeLog
 --------------
+2015-07-05: Version 0.8.0
+	* Changes made to Makefile - Remove OpenOffice specific files and
+	references
+
 2011-04-02: Version 0.5.8
 	* Changes made to the Makefile
 
@@ -11,10 +15,10 @@ ChangeLog
 	* Do not break before the Vowel in Tamil and Malayalam (eg: Transliterated Arabic words) - Thanks to Kevin for patch. 
 	* We can break after virama in Tamil- Thanks Kevin for the patch
 	* Many cosmetic fixes- Thanks to Mojca Miklavec, texhyphens
-	
+
 2010-02-04: Version 0.5.1
 	* Fixed the confusing license headers, thanks to Parag for reporting.
-	
+
 2009-08-22: Version 0.5
 	* Fixed the bugs reported by Kevin for Malayalam
 	* For all patterns the problems with incompatibility between tex patterns and libhyphen of Openoffice fixed
@@ -27,7 +31,7 @@ ChangeLog
 	* The patters for all languages made compatible with tex rules for hyphenation
 	* Don't break on either side of zwj/zwnj for all languages
 	* LEFTHYPHENMIN  and RIGHTHYPHENMIN properties removed. It can be configured from applications
-	
+
 2009-08-12: Version 0.3
 	* Removed unnecessary zwj/zwnj rules
 	* Added LEFTHYPHENMIN  and RIGHTHYPHENMIN for rules
