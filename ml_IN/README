@@ -1,11 +1,11 @@
-Hyphenation Patterns for Indian Languages
+Hyphenation Patterns for Malayalam
 -----------------------------------------
 
 Author:
 Santhosh Thottingal <santhosh.thottingal@gmail.com>
 
 Description:
-This is a set of hyphenation rules as per the tex hyphenation pattern. Can be used with openoffice hyphenation.
+This is Malayalam hyphenation rules as per the tex hyphenation patterns.
 
 License:
-LGPL v3+
+MIT

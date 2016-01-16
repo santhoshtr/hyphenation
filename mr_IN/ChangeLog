@@ -1,5 +1,7 @@
 ChangeLog
 --------------
+2016-01-16: Version 0.9.0
+        * Relicensing to MIT
 2015-07-05: Version 0.8.0
 	* Changes made to Makefile - Remove OpenOffice specific files and
 	references

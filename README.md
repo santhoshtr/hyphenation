@@ -1,7 +1,5 @@
-hyphenation
-===========
 
-Hyphenation patterns for Indian languages. mirror of http://git.savannah.gnu.org/cgit/smc/hyphenation.git
+Hyphenation patterns for Indian languages.
 
 
 Linux packages
@@ -21,3 +19,7 @@ These hyphenation rules are packaged in Debian. Following are the package names:
 * hyphen-te
 * hyphen-ru
 * hyphen-kn
+
+License
+=======
+The hyphenation rules are under MIT License
