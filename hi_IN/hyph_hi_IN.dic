@@ -24,23 +24,23 @@ UTF-8
 % GENERAL RULE
 % Do not break either side of ZERO-WIDTH JOINER  (U+200D)
 2‍2
-% Break on both sides of ZERO-WIDTH NON JOINER  (U+200C)
-1‌1
+% Break after ZERO-WIDTH NON JOINER  (U+200C)
+‌1
 % Break before or after any independent vowel.
-अ1
-आ1
-इ1
-ई1
-उ1
-ऊ1
-ऋ1
-ॠ1
-ऌ1
-ॡ1
-ए1
-ऐ1
-ओ1
-औ1
+1अ1
+1आ1
+1इ1
+1ई1
+1उ1
+1ऊ1
+1ऋ1
+1ॠ1
+1ऌ1
+1ॡ1
+1ए1
+1ऐ1
+1ओ1
+1औ1
 % Break after any dependent vowel but not before.
 ा1
 ि1
@@ -92,11 +92,11 @@ UTF-8
 1ह
 % Do not break before chandrabindu, anusvara, visarga, avagraha
 % and accents.
-2ँ1
-2ं1
-2ः1
-2ऽ1
-2॑1
-2॒1
+2ँ
+2ं
+2ः
+2ऽ
+2॑
+2॒
 % Do not break either side of virama (may be within conjunct).
-2्2
+्2
